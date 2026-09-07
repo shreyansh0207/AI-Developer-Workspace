@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Developer Workspace</title>
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                AI
+            </div>
+
+            <div class="brand-text">
+                <h1>Developer</h1>
+                <span>Workspace</span>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-title">
+            AI TOOLS
+        </div>
+
+
+        <nav class="tools">
+
+            <button
+                class="tool-btn active"
+                data-tool="generate"
+            >
+                <span class="tool-icon">⚡</span>
+                <span>Generate Code</span>
+            </button>
+
+
+            <button
+                class="tool-btn"
+                data-tool="explain"
+            >
+                <span class="tool-icon">💡</span>
+                <span>Explain Code</span>
+            </button>
+
+
+            <button
+                class="tool-btn"
+                data-tool="debug"
+            >
+                <span class="tool-icon">🐛</span>
+                <span>Debug Code</span>
+            </button>
+
+
+            <button
+                class="tool-btn"
+                data-tool="improve"
+            >
+                <span class="tool-icon">✨</span>
+                <span>Improve Code</span>
+            </button>
+
+
+            <button
+                class="tool-btn"
+                data-tool="convert"
+            >
+                <span class="tool-icon">🔄</span>
+                <span>Convert Code</span>
+            </button>
+
+
+            <button
+                class="tool-btn"
+                data-tool="docs"
+            >
+                <span class="tool-icon">📚</span>
+                <span>Documentation</span>
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="service-status">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>AI Services</strong>
+                    <small>Ready</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <h2 id="pageTitle">
+                    Generate Code
+                </h2>
+
+                <p id="pageSubtitle">
+                    Describe what you want to build and let AI write it for you.
+                </p>
+
+            </div>
+
+
+            <div class="model-selector">
+
+                <span>AI Model</span>
+
+                <select id="provider">
+
+                    <option value="auto">
+                        Auto
+                    </option>
+
+                    <option value="groq">
+                        Groq
+                    </option>
+
+                    <option value="gemini">
+                        Gemini
+                    </option>
+
+                </select>
+
+            </div>
+
+        </header>
+
+
+        <div class="content">
+
+            <div id="toolContainer"></div>
+
+
+            <section class="output-card">
+
+                <div class="output-header">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            AI OUTPUT
+                        </span>
+
+                        <h3 id="outputTitle">
+                            Generated response
+                        </h3>
+
+                    </div>
+
+
+                    <div class="output-actions">
+
+                        <button
+                            id="copyBtn"
+                            class="secondary-btn"
+                        >
+                            Copy
+                        </button>
+
+                        <button
+                            id="downloadBtn"
+                            class="secondary-btn"
+                        >
+                            Download
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="output"
+                    class="output"
+                >
+
+                    <div class="welcome">
+
+                        <div class="welcome-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Your AI workspace is ready
+                        </h3>
+
+                        <p>
+                            Choose a tool and start working with your code.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<div
+    id="toast"
+    class="toast"
+>
+</div>
+
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
