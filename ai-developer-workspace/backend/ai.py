@@ -361,3 +361,6 @@ def ask_ai(
         "Invalid provider. "
         "Use Auto, Groq, or Gemini."
     )
+
+
+#Make the changes in this so that it will run the code properly
