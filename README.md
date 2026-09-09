@@ -43,3 +43,9 @@ An AI-powered web-based developer workspace for generating, explaining, debuggin
 ```bash
 git clone YOUR_REPOSITORY_URL
 cd ai-developer-workspace
+cd backend 
+python -m venv venv    
+venv\Scripts\activate  
+uvicorn app:app --reload       
+cd frontend
+start index.html
